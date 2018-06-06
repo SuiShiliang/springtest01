@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/aspectjweaver-1.8.13.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/h2-1.4.195.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/jcl-over-slf4j-1.7.6.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/logback-classic-1.1.1.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/logback-core-1.1.1.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/slf4j-api-1.7.6.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/spring-aop-4.3.12.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/spring-beans-4.3.12.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/spring-context-4.3.12.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/spring-core-4.3.12.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/spring-expression-4.3.12.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/spring-jdbc-4.3.12.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/spring-orm-4.3.12.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/spring-security-crypto-5.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/spring-tx-4.3.12.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
