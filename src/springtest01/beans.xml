@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="TestC" class="springtest01.TestC"> 
+		<!-- 构造注入使用这个 -->
+		<constructor-arg ref="TestB"></constructor-arg>
+	</bean>
+	<bean id="TestB" class="springtest01.TestB">
+		<!-- setter注入使用这个 -->
+		<property name="a" ref="TestA"></property>
+	</bean>
+	<bean id="TestA" class="springtest01.TestA">
+		
+	</bean>
+</beans>
