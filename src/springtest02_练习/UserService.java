@@ -1,4 +1,4 @@
-package springtest02;
+package springtest02_练习;
 
 public class UserService {
 

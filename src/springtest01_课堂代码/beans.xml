@@ -5,15 +5,15 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean id="TestC" class="springtest01.TestC"> 
+	<bean id="TestC" class="springtest01_课堂代码.TestC"> 
 		<!-- 构造注入使用这个 -->
 		<constructor-arg ref="TestB"></constructor-arg>
 	</bean>
-	<bean id="TestB" class="springtest01.TestB">
+	<bean id="TestB" class="springtest01_课堂代码.TestB">
 		<!-- setter注入使用这个 -->
 		<property name="a" ref="TestA"></property>
 	</bean>
-	<bean id="TestA" class="springtest01.TestA">
+	<bean id="TestA" class="springtest01_课堂代码.TestA">
 		
 	</bean>
 </beans>

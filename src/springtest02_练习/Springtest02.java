@@ -1,4 +1,4 @@
-package springtest02;
+package springtest02_练习;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -6,7 +6,7 @@ public class Springtest02 {
 
 	public static void main(String[] args) {
 
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("./springtest02/beans.xml");
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("./springtest02_练习/beans.xml");
 		UserController controller = context.getBean(UserController.class);
 		/*UserService service = context.getBean(UserService.class);
 		Thread thread = new Thread(new Runnable() {

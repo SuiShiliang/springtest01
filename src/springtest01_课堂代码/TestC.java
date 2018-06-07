@@ -1,4 +1,4 @@
-package springtest01;
+package springtest01_课堂代码;
 
 public class TestC {
 

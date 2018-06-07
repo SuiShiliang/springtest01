@@ -7,8 +7,7 @@
 	</configSuffixes>
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
-		<config>src/springtest01/beans.xml</config>
-		<config>src/springtest02/beans.xml</config>
+		<config>src/springtest03_使用接口/beans.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
