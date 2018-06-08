@@ -5,13 +5,37 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean id = "StudentDao" class="springtest03_使用接口.StudentDaoImpl">
+	<!-- <bean id = "StudentDao" class="springtest03_使用接口.StudentDaoImpl">
 	</bean>
 	<bean id = "StudentService" class="springtest03_使用接口.StudentServiceImpl">
 		<constructor-arg ref="StudentDao"></constructor-arg>
 	</bean>
 	<bean id="StudentController" class="springtest03_使用接口.StudentController">
 		<constructor-arg ref="StudentService"></constructor-arg>
+	</bean> -->
+	
+	<!-- value 表示不需要使用spring beans.xml中配置的bean，直接传入值就行 -->
+	<!-- ref 表示需要使用spring beans.xml中配置的bean的id -->
+	<!-- org.springframework.jdbc.datasource.DriverManagerDataSource 为springframework中数据库驱动管理类 -->
+	<!-- <bean id="DataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"> 
+		<constructor-arg value="jdbc:oracle:thin:@localhost:1521:orcl"></constructor-arg>
+		<constructor-arg value="TEST_STORE"></constructor-arg>
+		<constructor-arg value="123456"></constructor-arg>
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+	</bean> -->
+	<!-- 使用properties文件配置jdbc -->
+	<!-- 拥有多个配置文件（.properties）时，每个文件应使用‘,’进行分割-->
+	<!-- 例子：location="classpath:./springtest03_使用接口/jdbc.properties,classpath:./springtest03_使用接口/jdbc2.properties"" -->
+	<context:property-placeholder location="classpath:./springtest03_使用接口/jdbc.properties"/>
+	<!-- value="${jdbc.url}" 中的"${jdbc.url}"对应的是properties文件的“jdbc.url”对应的值 -->
+	<bean id="DataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<constructor-arg value="${jdbc.url}"></constructor-arg>
+		<constructor-arg value="${jdbc.username}"></constructor-arg>
+		<constructor-arg value="${jdbc.password}"></constructor-arg>
+		<property name="driverClassName" value="${jdbc.dirverClass}"></property>
 	</bean>
+	<!-- 使用spring的自动扫描机制 -->
+	<context:component-scan base-package="springtest03_使用接口"></context:component-scan>
 
+	
 </beans>

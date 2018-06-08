@@ -8,6 +8,7 @@
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
 		<config>src/springtest03_使用接口/beans.xml</config>
+		<config>src/springtest04/beans.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
