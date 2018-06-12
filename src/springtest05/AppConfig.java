@@ -13,7 +13,8 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 @Configuration
 @ComponentScan(basePackages = "springtest05")
-@PropertySource("classpath:./springtest03_使用接口/jdbc.properties")//使用依赖注入配置文件
+@PropertySource({"classpath:./springtest03_使用接口/jdbc.properties"
+		, "classpath:./springtest05/App.properties"})//使用依赖注入配置文件
 public class AppConfig {
 	@Bean
 	public DataSource dataSource(Environment env) throws IOException {

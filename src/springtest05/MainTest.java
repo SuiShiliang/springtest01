@@ -1,6 +1,7 @@
 package springtest05;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.core.env.Environment;
 
 public class MainTest {
 
@@ -15,6 +16,10 @@ public class MainTest {
 				new ClassPathXmlApplicationContext("./springtest05/beans.xml");*/
 		SendMessage sendMessage = context.getBean(SendMessage.class);
 		sendMessage.sendMessage();
+		Environment env = context.getBean(Environment.class);
+		String saySomething = env.getProperty("app.config");
+		System.out.println(saySomething);
+		
 	}
 
 }
