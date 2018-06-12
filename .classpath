@@ -16,7 +16,7 @@
 	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/spring-expression-4.3.12.RELEASE.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/spring-jdbc-4.3.12.RELEASE.jar" sourcepath="F:/maven/mavenDownload/org/springframework/spring-jdbc/4.3.12.RELEASE/spring-jdbc-4.3.12.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/spring-orm-4.3.12.RELEASE.jar"/>
-	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/spring-security-crypto-5.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/spring-security-crypto-5.0.4.RELEASE.jar" sourcepath="F:/maven/mavenDownload/org/springframework/security/spring-security-crypto/5.0.4.RELEASE/spring-security-crypto-5.0.4.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="F:/Eclipse插件/spring需要的包/spring-tx-4.3.12.RELEASE.jar"/>
 	<classpathentry kind="lib" path="F:/眭世亮SQL学习/jdbc Java包/ojdbc6.jar" sourcepath="F:/maven/mavenDownload/cn/easyproject/ojdbc6/11.2.0.4/ojdbc6-11.2.0.4-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
